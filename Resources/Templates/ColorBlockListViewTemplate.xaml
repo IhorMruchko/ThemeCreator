@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models ="clr-namespace:ThemeCreator.Model"
+                    xmlns:toolKit="http://schemas.xceed.com/wpf/xaml/toolkit">
+    <DataTemplate x:Key="ColorBlockTemplate"
+                  DataType="models:ColorBlock">
+        <DockPanel>
+            <CheckBox VerticalAlignment="Center"
+                      HorizontalAlignment="Center"
+                      IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListViewItem}, Mode=TwoWay, Path=IsSelected}"
+                      Style="{DynamicResource CheckBoxDynamic}"/>
+            <toolKit:ColorPicker SelectedColor="{Binding Value, Mode=TwoWay}"
+                                 DockPanel.Dock="Right"
+                                 Width="100"/>
+            
+            <TextBox Text="{Binding Key, Mode=TwoWay}"
+                     Width="500"
+                     Style="{DynamicResource TextBoxDynamic}"/>
+        </DockPanel>
+    </DataTemplate>    
+</ResourceDictionary>

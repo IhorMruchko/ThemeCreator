@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Templates/ColorBlockListViewTemplate.xaml"/>
+        <ResourceDictionary Source="Templates/ListViewTemplates.xaml"/>
+        <ResourceDictionary Source="Templates/ListViewItemTemplates.xaml"/>
+        <ResourceDictionary Source="Templates/TextBoxTemplates.xaml"/>
+        <ResourceDictionary Source="Templates/ButtonTemplate.xaml"/>
+        <ResourceDictionary Source="Templates/ComboboxTemplate.xaml"/>
+        <ResourceDictionary Source="Templates/CheckBoxTemplate.xaml"/>
+    </ResourceDictionary.MergedDictionaries>    
+</ResourceDictionary>
